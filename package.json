@@ -31,7 +31,7 @@
     "dev": "yarn run styles && yarn start",
     "dev:windows": "start yarn run styles && yarn start",
     "lint:fix": "eslint --fix src/**/*.{js,jsx}",
-    "build": "yarn build:styles & react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "pretty": "prettier --write \"src/**/*.{js,jsx,css,scss}\"",
     "lint:style": "npx stylelint \"src/**/*.{css,scss}\" --allow-empty-input",
     "build:styles": "npx tailwindcss -i ./src/styles/index.scss -o ./src/styles/index.min.css --minify",
